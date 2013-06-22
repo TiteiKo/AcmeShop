@@ -13,13 +13,12 @@ Vagrant.configure("2") do |config|
 
     if config.has_key?(:hostmanager)
         config.hostmanager.enabled = true
-        config.hostmanager.aliases = %w(stage1)
+        config.hostmanager.aliases = %w(symfony)
     end
 
     config.vm.network :private_network, ip: "192.168.56.101"
 
     config.vm.network :forwarded_port, guest: 80, host: 8000
-    config.vm.network :forwarded_port, guest: 3737, host: 3737
     config.vm.synced_folder '.', '/vagrant/www', :nfs => (RUBY_PLATFORM =~ /linux|darwin/)
 
     config.vm.provision :chef_solo do |chef|
