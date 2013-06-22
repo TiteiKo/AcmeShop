@@ -1,0 +1,20 @@
+name              "symfony2-vagrant"
+maintainer        "Geoffrey Bachelet"
+maintainer_email  "geoffrey.bachelet@gmail.com"
+license           "N/A"
+description       "Installs and configures a box for a symfony 2 project"
+version           "0.0.1"
+
+recipe            "symfony2-vagrant", "Installs and configures a box for a symfony 2 project"
+
+supports "debian"
+
+depends "dotdeb"
+depends "nginx"
+depends "php"
+depends "mysql"
+depends "database"
+depends "rabbitmq"
+depends "git"
+depends "vim"
+depends "redis"
