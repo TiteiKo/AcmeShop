@@ -20,4 +20,3 @@ And with the following configuration:
 * php's configuration should be mostly ok for dev use
 
 Also, if you have the [hostmanager vagrant plugin](https://github.com/smdahlen/vagrant-hostmanager) installed, it will make use of it and add a `symfony` host to your `/etc/hosts` (meaning you can access your VM through `http://symfony/`).
-
