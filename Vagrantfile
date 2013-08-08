@@ -8,7 +8,7 @@ class Vagrant::Config::V2::Root
 end
 
 Vagrant.configure("2") do |config|
-    config.vm.box = "debian"
+    config.vm.box = "stage1-dev"
     config.vm.box_url = "https://www.dropbox.com/s/7kxy8ads9pebfmk/debian.box"
 
     if config.has_key?(:hostmanager)
